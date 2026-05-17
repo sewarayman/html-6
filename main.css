@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    width: 100%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bage-1{
+    width: 100%;
+    height:100vh;
+    position: relative;
+}
+.bage-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    width: 100%;
+    gap: 720px;
+    position: fixed;
+    z-index: 9;
+}
+.header a{
+    color: rgba(255, 255, 255, 0.671);
+
+}
+.header a:hover{
+    color: rgba(244, 98, 58, 0.9);
+}
+.note{
+    position: absolute;
+    background-color: rgba(66, 30, 30, 0.574);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 100px 400px;
+}
+.note h1{
+    font-size: 50px;
+    color: white;
+    padding-bottom: 20px;
+}
+h1::after{
+    content:"";
+    background-color: rgba(244, 98, 58, 0.9);
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    top: 340px;
+    left: 48%;
+}
+.note p{
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.59);
+}
+.note button{
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(244, 98, 58, 0.9);
+    border: solid rgba(244, 98, 58, 0.9);
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgba(244, 98, 58, 0.69);
+}
+.bage-2 button:hover,.bage-4 button:hover{
+    background-color: rgba(240, 248, 255, 0.778);
+}
+.bage-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(244, 98, 58, 0.9);
+    width: 100%;
+    height: 40%;
+    padding: 100px 300px;
+}
+.bage-2 h2{
+    font-size: 40px;
+    color: white; 
+}
+.bage-2 h2::after{
+    content:"";
+    background-color: white;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    top: 900px;
+    left: 48%;
+}
+.bage-2 p{
+    font-size: 20px;
+    color: white;
+}
+button{
+    margin-top: 30px;
+    padding: 20px;
+    border: solid white;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.items{
+    display:flex;
+    flex-wrap: wrap;
+    width: (100% - 60px)/4;
+    margin:50px 200px 100px 200px;
+}
+.title{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:100px;
+}
+.title h2{
+    font-size: 40px;
+}
+.title h2::after{
+    content:"";
+    background-color: rgba(244, 98, 58, 0.9);
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    top: 1330px;
+    left: 48%;
+}
+.item{
+    display: flex;
+    inset: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    height: 200px;
+    
+}
+.item img{
+    width: 70px;
+    height: 70px;
+}
+.collection-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    text-align: center;
+}
+.collection{
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+}
+.collection-details{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(244, 98, 58, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: .9s;
+    cursor: pointer;    
+}
+.collection-details p{
+    color: rgba(240, 248, 255, 0.738);
+}
+.collection:hover .collection-details{
+    opacity: 1;
+}
+.bage-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.775);
+    width: 100%;
+    height: 30%;
+    padding: 100px 100px;
+}
+.bage-4 h2{
+    font-size: 40px;
+    color: white;
+}
+.bage-4 button{
+    margin-top: 1px;
+    padding: 20px;
+    border: solid white;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.bage-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.775);
+    width: 100%;
+    height: 50%;
+    padding: 150px 400px;
+}
+.bage-5 h2{
+    font-size: 40px;
+}
+.bage-5 h2::after{
+    content:"";
+    background-color: rgba(244, 98, 58, 0.9);
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    top: 2820px;
+    left: 48%;
+}
+.bage-5 p{
+    font-size: 20px;
+    margin: 50px ;
+}
+#submet{
+    width: 500px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color:rgba(244, 98, 58, 0.511);
+    border: solid rgba(244, 98, 58, 0.511);
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+label{
+    font-size: 20px;
+}
+input{
+    width: 500px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+textarea{
+    width: 500px;
+    margin: 5px;
+    padding: 50px;
+    border-radius: 10px;
+}
+.bage-5 img{
+    width: 200px;
+    height: 100px;
+    margin-top: 50px;
+}
+.bage-6{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.442);
+    background-color: rgba(0, 0, 0, 0.071);
+}
